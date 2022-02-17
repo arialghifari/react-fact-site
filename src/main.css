@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    min-width: 320px;
-}
-
 body {
     font-family: inter;
     font-size: 62.5%;
@@ -26,10 +22,22 @@ nav {
     padding: 0 40px;
 }
 
-.react-logo {
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.brand > h1 {
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+.brand > img {
     height: 50px;
     width: 50px;
-    cursor: pointer;
 }
 
 .nav-items {
@@ -38,22 +46,16 @@ nav {
     color: white;
 }
 
-.nav-items > li {
-    cursor: pointer;
-    font-weight: 600;
+.nav-items > p {
     font-size: 1.8em;
-}
-
-.nav-items > li:hover {
-    color: #61dafb;
-    transition: all 60ms;
+    font-weight: 500;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 40px 60px 40px;
+    padding: 100px 40px 60px 40px;
     min-height: calc(100vh - 160px);
 }
 
@@ -64,27 +66,35 @@ main > h1 {
     color: white;
 }
 
-main > ol {
-    list-style: decimal;
-    list-style-position: inside;
+main > ul {
     padding-top: 60px;
+    margin-left: 84px;
 }
 
-main > ol > li {
+main > ul > li {
     font-size: 2.8em;
     color: #d2d2d2;
-    padding-bottom: 36px;
+    margin-bottom: 28px;
 }
 
-main > ol > li:last-child {
+main > ul > li:before {
+    content: "";
+    background: url("./bullet.svg") no-repeat center;
+    background-size: contain;
+    padding-right: 18px;
+    margin-right: 24px;
+}
+
+main > ul > li:last-child {
     padding-bottom: 0;
 }
 
 .react-logo-large {
-    min-width: 700px;
+    min-width: 640px;
     position: fixed;
     right: -200px;
-    z-index: -99;
+    bottom: -200px;
+    z-index: -100;
 }
 
 footer {
@@ -93,11 +103,49 @@ footer {
     justify-content: center;
     height: 60px;
     background-color: #21222a;
-    /* width: 100%; */
     position: relative;
 }
 
 footer > a {
     font-size: 1.8em;
     color: #d2d2d2;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    nav {
+        justify-content: center;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main > h1 {
+        font-size: 7.2em;
+    }
+
+    main > ul > li {
+        font-size: 2.8em;
+    }
+
+    main > ul {
+        padding-top: 60px;
+        margin-left: 0;
+    }
+
+    footer > a {
+        font-size: 1.8em;
+    }
+
+    .react-logo-large {
+        min-width: 400px;
+        right: -200px;
+        bottom: -60px;
+    }
 }
