@@ -3,7 +3,7 @@ import reactLogo from "../reactjs-icon.svg";
 const Header = () => {
     return (
         <header>
-            <nav className="nav">
+            <nav>
                 <div className="brand">
                     <img src={reactLogo} alt="react-logo" />
                     <h1>ReactFacts</h1>

@@ -15,7 +15,6 @@ const MainContent = () => {
                 </li>
             </ul>
             <img
-                className="react-logo-large"
                 src={reactLogoLarge}
                 alt="react-logo"
             />

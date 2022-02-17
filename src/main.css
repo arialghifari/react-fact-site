@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 body {
-    font-family: inter;
+    font-family: Inter;
     font-size: 62.5%;
     background-color: #282d35;
 }
@@ -89,7 +91,7 @@ main > ul > li:last-child {
     padding-bottom: 0;
 }
 
-.react-logo-large {
+main > img {
     min-width: 640px;
     position: fixed;
     right: -200px;
@@ -109,7 +111,6 @@ footer {
 footer > a {
     font-size: 1.8em;
     color: #d2d2d2;
-    text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -139,13 +140,13 @@ footer > a {
         margin-left: 0;
     }
 
-    footer > a {
-        font-size: 1.8em;
-    }
-
-    .react-logo-large {
+    main > img {
         min-width: 400px;
         right: -200px;
         bottom: -60px;
+    }
+
+    footer > a {
+        font-size: 1.8em;
     }
 }
