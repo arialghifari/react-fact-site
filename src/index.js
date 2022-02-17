@@ -6,11 +6,11 @@ import Footer from "./Footer";
 
 const App = () => {
     return (
-        <>
+        <div className="font-inter">
             <Header />
             <MainContent />
             <Footer />
-        </>
+        </div>
     );
 };
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    min-width: 320px;
+}
+
 body {
     font-family: inter;
     font-size: 62.5%;
@@ -49,8 +53,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 120px 40px 60px 40px;
     min-height: calc(100vh - 160px);
 }
 
@@ -65,7 +68,6 @@ main > ol {
     list-style: decimal;
     list-style-position: inside;
     padding-top: 60px;
-    width: 880px;
 }
 
 main > ol > li {
@@ -79,11 +81,10 @@ main > ol > li:last-child {
 }
 
 .react-logo-large {
-	width: 700px;
-    position: absolute;
-    right: 0;
-	margin-left: 900px;
-	z-index: -99;
+    min-width: 700px;
+    position: fixed;
+    right: -200px;
+    z-index: -99;
 }
 
 footer {
@@ -92,7 +93,7 @@ footer {
     justify-content: center;
     height: 60px;
     background-color: #21222a;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 

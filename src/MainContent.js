@@ -11,7 +11,11 @@ const MainContent = () => {
                 </li>
                 <li>Its the most popular library & also a big community</li>
             </ol>
-            <img className="react-logo-large" src={reactLogoLarge} alt="react-logo" />
+            <img
+                className="react-logo-large"
+                src={reactLogoLarge}
+                alt="react-logo"
+            />
         </main>
     );
 };
