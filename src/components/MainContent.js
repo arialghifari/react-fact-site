@@ -1,4 +1,4 @@
-import reactLogoLarge from "../reactjs-icon-large.svg";
+import reactLogoLarge from "../svg/reactjs-icon-large.svg";
 
 const MainContent = () => {
     return (
@@ -14,10 +14,7 @@ const MainContent = () => {
                     Powers thousands of enterprise apps, including mobile apps
                 </li>
             </ul>
-            <img
-                src={reactLogoLarge}
-                alt="react-logo"
-            />
+            <img src={reactLogoLarge} alt="react-logo" />
         </main>
     );
 };

@@ -1,8 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 body {
     font-family: Inter;
@@ -71,6 +74,7 @@ main > h1 {
 main > ul {
     padding-top: 60px;
     margin-left: 84px;
+    list-style-type: none;
 }
 
 main > ul > li {
@@ -81,7 +85,7 @@ main > ul > li {
 
 main > ul > li:before {
     content: "";
-    background: url("./bullet.svg") no-repeat center;
+    background: url("./svg/bullet.svg") no-repeat center;
     background-size: contain;
     padding-right: 18px;
     margin-right: 24px;
@@ -103,7 +107,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 80px;
     background-color: #21222a;
     position: relative;
 }

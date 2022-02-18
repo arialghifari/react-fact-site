@@ -1,4 +1,4 @@
-import reactLogo from "../reactjs-icon.svg";
+import reactLogo from "../svg/reactjs-icon.svg";
 
 const Header = () => {
     return (
