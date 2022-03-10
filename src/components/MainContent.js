@@ -1,8 +1,9 @@
 import reactLogoLargeLightMode from "../svg/reactjs-icon-large-lightmode.svg";
+import reactLogoLargeDarkMode from "../svg/reactjs-icon-large-darkmode.svg";
 
-const MainContent = () => {
+const MainContent = ({ isDarkMode }) => {
   return (
-    <main>
+    <main className={isDarkMode ? "dark" : ""}>
       <h1>Fun facts about React</h1>
 
       <ul>
@@ -12,7 +13,10 @@ const MainContent = () => {
         <li>Is maintained by awesome people in Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
-      <img src={reactLogoLargeLightMode} alt="react-logo" />
+      <img
+        src={isDarkMode ? reactLogoLargeDarkMode : reactLogoLargeLightMode}
+        alt="react-logo"
+      />
     </main>
   );
 };

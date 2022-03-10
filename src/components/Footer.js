@@ -1,8 +1,8 @@
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer className={isDarkMode ? "dark" : ""}>
       <a
         href="https://github.com/arialghifari"
         target="_blank"
