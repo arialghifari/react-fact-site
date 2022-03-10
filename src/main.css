@@ -1,156 +1,162 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    font-family: Inter;
-    font-size: 62.5%;
-    background-color: #282d35;
+  font-family: Inter;
+  font-size: 62.5%;
+  background-color: #ffffff;
 }
 
 header {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 nav {
-    height: 100px;
-    background-color: #21222a;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .brand > h1 {
-    font-size: 3.2em;
-    font-weight: bold;
-    color: #61dafb;
+  font-size: 3.2em;
+  font-weight: bold;
+  color: #61dafb;
 }
 
 .brand > img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .nav-items {
-    display: flex;
-    gap: 28px;
-    color: white;
+  display: flex;
+  gap: 8px;
+  color: #21222a;
+  cursor: pointer;
 }
 
 .nav-items > p {
-    font-size: 1.8em;
-    font-weight: 500;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.nav-items p:last-child {
+  color: #d3d3d3;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 40px 60px 40px;
-    min-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 40px 60px 40px;
+  min-height: calc(100vh - 180px);
+  color: #21222a;
 }
 
 main > h1 {
-    font-size: 7.2em;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+  font-size: 7.2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 main > ul {
-    padding-top: 60px;
-    margin-left: 84px;
-    list-style-type: none;
+  padding-top: 60px;
+  margin-left: 84px;
+  list-style-type: none;
 }
 
 main > ul > li {
-    font-size: 2.8em;
-    color: #d2d2d2;
-    margin-bottom: 28px;
+  font-size: 2.8em;
+  margin-bottom: 28px;
 }
 
 main > ul > li:before {
-    content: "";
-    background: url("./svg/bullet.svg") no-repeat center;
-    background-size: contain;
-    padding-right: 18px;
-    margin-right: 24px;
+  content: "";
+  background: url("./svg/bullet.svg") no-repeat center;
+  background-size: contain;
+  padding-right: 18px;
+  margin-right: 24px;
 }
 
 main > ul > li:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 main > img {
-    min-width: 640px;
-    position: fixed;
-    right: -200px;
-    bottom: -200px;
-    z-index: -100;
+  min-width: 640px;
+  position: fixed;
+  right: -150px;
+  bottom: -150px;
+  z-index: -100;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    background-color: #21222a;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.02);
 }
 
 footer > a {
-    font-size: 1.8em;
-    color: #d2d2d2;
+  font-size: 1.8em;
+  color: #21222a;
 }
 
 @media (max-width: 640px) {
-    nav {
-        justify-content: center;
-    }
+  nav {
+    justify-content: center;
+  }
 
-    .nav-items {
-        display: none;
-    }
+  .nav-items {
+    display: none;
+  }
 
-    main {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    main > h1 {
-        font-size: 7.2em;
-    }
+  main > h1 {
+    font-size: 7.2em;
+  }
 
-    main > ul > li {
-        font-size: 2.8em;
-    }
+  main > ul > li {
+    font-size: 2.8em;
+  }
 
-    main > ul {
-        padding-top: 60px;
-        margin-left: 0;
-    }
+  main > ul {
+    padding-top: 60px;
+    margin-left: 0;
+  }
 
-    main > img {
-        min-width: 400px;
-        right: -200px;
-        bottom: -60px;
-    }
+  main > img {
+    min-width: 400px;
+    right: -200px;
+    bottom: -60px;
+  }
 
-    footer > a {
-        font-size: 1.8em;
-    }
+  footer > a {
+    font-size: 1.8em;
+  }
 }

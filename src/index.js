@@ -5,13 +5,13 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 
 const App = () => {
-    return (
-        <>
-            <Header />
-            <MainContent />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
