@@ -10,10 +10,8 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = react.useState(darkModeStatus);
 
   const toggleDarkMode = () => {
-    darkModeStatus = !darkModeStatus;
-    localStorage.setItem("isDarkMode", darkModeStatus);
-
-    setIsDarkMode(darkModeStatus);
+    localStorage.setItem("isDarkMode", !darkModeStatus);
+    setIsDarkMode(!darkModeStatus);
   };
 
   return (
